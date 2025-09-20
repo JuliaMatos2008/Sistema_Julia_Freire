@@ -8,6 +8,7 @@ package tools;
 
 import javax.swing.JComboBox;
 import javax.swing.JComponent;
+import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
 /**
@@ -33,4 +34,14 @@ public class Util {
         }
     }
 
+     public static void mensagem(String cad) {
+        JOptionPane.showMessageDialog(null, cad);
+    }
+
+    public static boolean perguntar(String cad) {
+        JOptionPane.showConfirmDialog(null, cad);
+        return true;
+    }
 }
+
+

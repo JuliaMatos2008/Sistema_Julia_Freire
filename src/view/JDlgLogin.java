@@ -3,26 +3,18 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JDialog.java to edit this template
  */
 package view;
-import bean.Usuarios;
-import dao.UsuariosDao;
-import javax.swing.JOptionPane;
-import view.JFrmPrincipal;
+
 /**
  *
- * @author julia
+ * @author admin
  */
-public class JDlgLogin extends javax.swing.JDialog {
-    private int tentativas = 0;
-
-    /**
-     * Creates new form JDlgLogin
-     */
+public class JDlgLogin extends javax.swing.JDialog{
+    
     public JDlgLogin(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         setLocationRelativeTo(null);
-        initComponents();
+        setTitle("Login do Sistema");
     }
-
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -98,77 +90,19 @@ public class JDlgLogin extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-     String loginDigitado = jTextFieldUsuario.getText();
-    String senhaDigitada = new String(jPasswordFieldSenha.getPassword());
-
-    UsuariosDao usuariosDao = new UsuariosDao();
-    Usuarios usuario = usuariosDao.buscarPorApelido(loginDigitado);
-
-    if (usuario != null && usuario.getJmf_senha().equals(senhaDigitada)) {
-        this.dispose();  // Fecha a tela de login
-        JFrmPrincipal telaPrincipal = new JFrmPrincipal();
-        telaPrincipal.setVisible(true);
-    } else {
-        tentativas++;
-        JOptionPane.showMessageDialog(
-                this,
-                "Credenciais inválidas! (" + tentativas + "/3)",
-                "Erro de Login",
-                JOptionPane.ERROR_MESSAGE
-        );
-
-        jTextFieldUsuario.setText("");
-        jPasswordFieldSenha.setText("");
-        jTextFieldUsuario.requestFocus();
-
-        if (tentativas >= 3) {
-            JOptionPane.showMessageDialog(this, "Número de tentativas excedido. Encerrando o sistema.");
-            System.exit(0);
-        }
-    }
+ 
     }//GEN-LAST:event_jButton1ActionPerformed
-
-    /**
+ /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(JDlgLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(JDlgLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(JDlgLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(JDlgLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+   public static void main(String args[]) {
+    java.awt.EventQueue.invokeLater(new Runnable() {
+        public void run() {
+            JDlgLogin dialog = new JDlgLogin(new javax.swing.JFrame(), true);
+            dialog.setVisible(true);
         }
-        //</editor-fold>
-
-        /* Create and display the dialog */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                JDlgLogin dialog = new JDlgLogin(new javax.swing.JFrame(), true);
-                dialog.addWindowListener(new java.awt.event.WindowAdapter() {
-                    @Override
-                    public void windowClosing(java.awt.event.WindowEvent e) {
-                        System.exit(0);
-                    }
-                });
-                dialog.setVisible(true);
-            }
-        });
-    }
+    });
+}
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;

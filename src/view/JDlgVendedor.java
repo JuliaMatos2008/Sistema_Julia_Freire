@@ -62,11 +62,11 @@ public class JDlgVendedor extends javax.swing.JDialog {
         jFmtCelularVendedor = new javax.swing.JFormattedTextField();
         jFmtDataNascimentoVendedor = new javax.swing.JFormattedTextField();
         jChbAtivoVendedor = new javax.swing.JCheckBox();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        jBntIncluir = new javax.swing.JButton();
+        jBntAlterar = new javax.swing.JButton();
         jBtnExcluir = new javax.swing.JButton();
         jBtnConfirmar = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
+        jBntCancelar = new javax.swing.JButton();
         jBtnPesquisar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -95,23 +95,23 @@ public class JDlgVendedor extends javax.swing.JDialog {
 
         jChbAtivoVendedor.setText("Ativo ");
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/incluir.png"))); // NOI18N
-        jButton1.setText("Incluir");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        jBntIncluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/incluir.png"))); // NOI18N
+        jBntIncluir.setText("Incluir");
+        jBntIncluir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                jBntIncluirActionPerformed(evt);
             }
         });
 
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/alterar.png"))); // NOI18N
-        jButton2.setText("Alterar");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        jBntAlterar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/alterar.png"))); // NOI18N
+        jBntAlterar.setText("Alterar");
+        jBntAlterar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                jBntAlterarActionPerformed(evt);
             }
         });
 
-        jBtnExcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/Excluir.png"))); // NOI18N
+        jBtnExcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Excluir.png"))); // NOI18N
         jBtnExcluir.setText("Excluir");
         jBtnExcluir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -119,7 +119,7 @@ public class JDlgVendedor extends javax.swing.JDialog {
             }
         });
 
-        jBtnConfirmar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/ok.png"))); // NOI18N
+        jBtnConfirmar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/ok.png"))); // NOI18N
         jBtnConfirmar.setText("Confirmar");
         jBtnConfirmar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -127,15 +127,15 @@ public class JDlgVendedor extends javax.swing.JDialog {
             }
         });
 
-        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/cancelar.png"))); // NOI18N
-        jButton5.setText("Cancelar");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        jBntCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/cancelar.png"))); // NOI18N
+        jBntCancelar.setText("Cancelar");
+        jBntCancelar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                jBntCancelarActionPerformed(evt);
             }
         });
 
-        jBtnPesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/pesquisar.png"))); // NOI18N
+        jBtnPesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/pesquisar.png"))); // NOI18N
         jBtnPesquisar.setText("Pesquisar");
         jBtnPesquisar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -158,15 +158,15 @@ public class JDlgVendedor extends javax.swing.JDialog {
                     .addComponent(jLabel5)
                     .addComponent(jChbAtivoVendedor)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton1)
+                        .addComponent(jBntIncluir)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton2)
+                        .addComponent(jBntAlterar)
                         .addGap(18, 18, 18)
                         .addComponent(jBtnExcluir)
                         .addGap(18, 18, 18)
                         .addComponent(jBtnConfirmar)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton5)
+                        .addComponent(jBntCancelar)
                         .addGap(18, 18, 18)
                         .addComponent(jBtnPesquisar))
                     .addComponent(jTxtCodigoVendedor, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -239,11 +239,11 @@ public class JDlgVendedor extends javax.swing.JDialog {
                 .addComponent(jChbAtivoVendedor)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2)
+                    .addComponent(jBntIncluir)
+                    .addComponent(jBntAlterar)
                     .addComponent(jBtnExcluir)
                     .addComponent(jBtnConfirmar)
-                    .addComponent(jButton5)
+                    .addComponent(jBntCancelar)
                     .addComponent(jBtnPesquisar))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -251,21 +251,26 @@ public class JDlgVendedor extends javax.swing.JDialog {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jBntIncluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBntIncluirActionPerformed
         // TODO add your handling code here:
 
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_jBntIncluirActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void jBntAlterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBntAlterarActionPerformed
         // TODO add your handling code here:
 
 
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_jBntAlterarActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        // TODO add your handling code here:
+    private void jBntCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBntCancelarActionPerformed
+Util.habilitar(false, jTxtIdProduto, jTxtNome, jFmtPreco, jTxtDescricao, jLblCategoria,
+                jTxtFornecedor, jCboAtivo,
+                jBtnConfirmarProdutos, jBtnancelarProdutos);
+        Util.habilitar(true, jBtnIncluirProdutos, jBtnAlterarProdutos, jBtnExcluirProdutos, jBtnPesquisarProdutos);
+        Util.Limpar(jTxtIdProduto, jTxtNome, jFmtPreco, jTxtDescricao, jLblCategoria,
+                jTxtFornecedor, jCboAtivo);        // TODO add your handling code here:
         
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_jBntCancelarActionPerformed
 
     private void jBtnConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnConfirmarActionPerformed
         // TODO add your handling code here:
@@ -297,12 +302,12 @@ public class JDlgVendedor extends javax.swing.JDialog {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jBntAlterar;
+    private javax.swing.JButton jBntCancelar;
+    private javax.swing.JButton jBntIncluir;
     private javax.swing.JButton jBtnConfirmar;
     private javax.swing.JButton jBtnExcluir;
     private javax.swing.JButton jBtnPesquisar;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton5;
     private javax.swing.JCheckBox jChbAtivoVendedor;
     private javax.swing.JFormattedTextField jFmtCelularVendedor;
     private javax.swing.JFormattedTextField jFmtCpfVendedor;

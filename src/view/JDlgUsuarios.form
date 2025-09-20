@@ -51,7 +51,7 @@
                               <Component id="jBtnExcluirUsuarios" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace min="0" pref="83" max="32767" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
@@ -106,7 +106,7 @@
                   <Component id="jBtnAlterarUsuarios" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jBtnExcluirUsuarios" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="7" max="32767" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jBtnConfirmarUsuarios" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jBtnCancelarUsuarios" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -194,7 +194,7 @@
     <Component class="javax.swing.JButton" name="jBtnIncluirUsuarios">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/imagens/imagens/incluir.png"/>
+          <Image iconType="3" name="/img/incluir.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Incluir"/>
       </Properties>
@@ -205,7 +205,7 @@
     <Component class="javax.swing.JButton" name="jBtnAlterarUsuarios">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/imagens/imagens/alterar.png"/>
+          <Image iconType="3" name="/img/alterar.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Alterar"/>
       </Properties>
@@ -216,7 +216,7 @@
     <Component class="javax.swing.JButton" name="jBtnExcluirUsuarios">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/imagens/imagens/Excluir.png"/>
+          <Image iconType="3" name="/img/Excluir.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Excluir"/>
       </Properties>
@@ -227,7 +227,7 @@
     <Component class="javax.swing.JButton" name="jBtnConfirmarUsuarios">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/imagens/imagens/ok.png"/>
+          <Image iconType="3" name="/img/ok.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Confirmar"/>
       </Properties>
@@ -238,7 +238,7 @@
     <Component class="javax.swing.JButton" name="jBtnCancelarUsuarios">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/imagens/imagens/cancelar.png"/>
+          <Image iconType="3" name="/img/cancelar.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Cancelar"/>
       </Properties>
@@ -249,7 +249,7 @@
     <Component class="javax.swing.JButton" name="jBtnPesquisarUsuarios">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/imagens/imagens/pesquisar.png"/>
+          <Image iconType="3" name="/img/pesquisar.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Pesquisar"/>
       </Properties>

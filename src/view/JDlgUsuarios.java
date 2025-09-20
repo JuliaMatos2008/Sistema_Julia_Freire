@@ -91,7 +91,7 @@ public class JDlgUsuarios extends javax.swing.JDialog {
 
         jLabel8.setText("Nivel");
 
-        jBtnIncluirUsuarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/incluir.png"))); // NOI18N
+        jBtnIncluirUsuarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/incluir.png"))); // NOI18N
         jBtnIncluirUsuarios.setText("Incluir");
         jBtnIncluirUsuarios.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -99,7 +99,7 @@ public class JDlgUsuarios extends javax.swing.JDialog {
             }
         });
 
-        jBtnAlterarUsuarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/alterar.png"))); // NOI18N
+        jBtnAlterarUsuarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/alterar.png"))); // NOI18N
         jBtnAlterarUsuarios.setText("Alterar");
         jBtnAlterarUsuarios.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -107,7 +107,7 @@ public class JDlgUsuarios extends javax.swing.JDialog {
             }
         });
 
-        jBtnExcluirUsuarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/Excluir.png"))); // NOI18N
+        jBtnExcluirUsuarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Excluir.png"))); // NOI18N
         jBtnExcluirUsuarios.setText("Excluir");
         jBtnExcluirUsuarios.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -115,7 +115,7 @@ public class JDlgUsuarios extends javax.swing.JDialog {
             }
         });
 
-        jBtnConfirmarUsuarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/ok.png"))); // NOI18N
+        jBtnConfirmarUsuarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/ok.png"))); // NOI18N
         jBtnConfirmarUsuarios.setText("Confirmar");
         jBtnConfirmarUsuarios.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -123,7 +123,7 @@ public class JDlgUsuarios extends javax.swing.JDialog {
             }
         });
 
-        jBtnCancelarUsuarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/cancelar.png"))); // NOI18N
+        jBtnCancelarUsuarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/cancelar.png"))); // NOI18N
         jBtnCancelarUsuarios.setText("Cancelar");
         jBtnCancelarUsuarios.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -131,7 +131,7 @@ public class JDlgUsuarios extends javax.swing.JDialog {
             }
         });
 
-        jBtnPesquisarUsuarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/pesquisar.png"))); // NOI18N
+        jBtnPesquisarUsuarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/pesquisar.png"))); // NOI18N
         jBtnPesquisarUsuarios.setText("Pesquisar");
         jBtnPesquisarUsuarios.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -169,7 +169,7 @@ public class JDlgUsuarios extends javax.swing.JDialog {
                                 .addComponent(jBtnAlterarUsuarios)
                                 .addGap(18, 18, 18)
                                 .addComponent(jBtnExcluirUsuarios)))
-                        .addGap(0, 83, Short.MAX_VALUE)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
             .addGroup(layout.createSequentialGroup()
                 .addGap(26, 26, 26)
@@ -218,7 +218,7 @@ public class JDlgUsuarios extends javax.swing.JDialog {
                     .addComponent(jBtnIncluirUsuarios)
                     .addComponent(jBtnAlterarUsuarios)
                     .addComponent(jBtnExcluirUsuarios))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 7, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jBtnConfirmarUsuarios)
                     .addComponent(jBtnCancelarUsuarios)
@@ -261,7 +261,12 @@ public class JDlgUsuarios extends javax.swing.JDialog {
 
     private void jBtnCancelarUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnCancelarUsuariosActionPerformed
         // TODO add your handling code here:
-
+    Util.habilitar(false, jTxtIdProduto, jTxtNome, jFmtPreco, jTxtDescricao, jLblCategoria,
+                jTxtFornecedor, jCboAtivo,
+                jBtnConfirmarProdutos, jBtnancelarProdutos);
+        Util.habilitar(true, jBtnIncluirProdutos, jBtnAlterarProdutos, jBtnExcluirProdutos, jBtnPesquisarProdutos);
+        Util.Limpar(jTxtIdProduto, jTxtNome, jFmtPreco, jTxtDescricao, jLblCategoria,
+                jTxtFornecedor, jCboAtivo);
     }//GEN-LAST:event_jBtnCancelarUsuariosActionPerformed
 
     private void jBtnPesquisarUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnPesquisarUsuariosActionPerformed
