@@ -276,6 +276,7 @@ public class JDlgProdutos extends javax.swing.JDialog {
 
     private void jBtnPesquisarProdutosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnPesquisarProdutosActionPerformed
         // TODO add your handling code here:
+         Util.mensagem("Não implementado");
         
     }//GEN-LAST:event_jBtnPesquisarProdutosActionPerformed
 

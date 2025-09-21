@@ -47,10 +47,11 @@ public class JFrmPrincipal extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jMnCadastro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/gravar.png"))); // NOI18N
         jMnCadastro.setText("Cadastro");
 
         jMnUsuarios.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_U, java.awt.event.InputEvent.CTRL_DOWN_MASK));
-        jMnUsuarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/incluir.png"))); // NOI18N
+        jMnUsuarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/usuario.png"))); // NOI18N
         jMnUsuarios.setText("Usuarios");
         jMnUsuarios.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -60,7 +61,7 @@ public class JFrmPrincipal extends javax.swing.JFrame {
         jMnCadastro.add(jMnUsuarios);
 
         jMnClientes.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.CTRL_DOWN_MASK));
-        jMnClientes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/cancelar.png"))); // NOI18N
+        jMnClientes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/cliente.png"))); // NOI18N
         jMnClientes.setText("Clientes");
         jMnClientes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -70,7 +71,7 @@ public class JFrmPrincipal extends javax.swing.JFrame {
         jMnCadastro.add(jMnClientes);
 
         jMnVendedor.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_V, java.awt.event.InputEvent.CTRL_DOWN_MASK));
-        jMnVendedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/alterar.png"))); // NOI18N
+        jMnVendedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/vendedores.png"))); // NOI18N
         jMnVendedor.setText("Vendedor");
         jMnVendedor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -80,7 +81,7 @@ public class JFrmPrincipal extends javax.swing.JFrame {
         jMnCadastro.add(jMnVendedor);
 
         jMnProdutos.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.CTRL_DOWN_MASK));
-        jMnProdutos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/pesquisar.png"))); // NOI18N
+        jMnProdutos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/produto.png"))); // NOI18N
         jMnProdutos.setText("Produtos");
         jMnProdutos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -91,7 +92,7 @@ public class JFrmPrincipal extends javax.swing.JFrame {
         jMnCadastro.add(jSeparator1);
 
         jMnSair.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.CTRL_DOWN_MASK));
-        jMnSair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/exit.png"))); // NOI18N
+        jMnSair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/exit_1_1.png"))); // NOI18N
         jMnSair.setText("Sair");
         jMnSair.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -102,6 +103,7 @@ public class JFrmPrincipal extends javax.swing.JFrame {
 
         jMenuBar1.add(jMnCadastro);
 
+        jMnMovimento.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/vendedores.png"))); // NOI18N
         jMnMovimento.setText("Movimento");
         jMenuBar1.add(jMnMovimento);
 
@@ -115,7 +117,7 @@ public class JFrmPrincipal extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 408, Short.MAX_VALUE)
+            .addGap(0, 400, Short.MAX_VALUE)
         );
 
         pack();
@@ -147,6 +149,7 @@ public class JFrmPrincipal extends javax.swing.JFrame {
 
     private void jMnSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnSairActionPerformed
         // TODO add your handling code here:
+        dispose();
     }//GEN-LAST:event_jMnSairActionPerformed
 
     /**

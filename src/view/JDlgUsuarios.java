@@ -236,22 +236,37 @@ public class JDlgUsuarios extends javax.swing.JDialog {
     private void jBtnConfirmarUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnConfirmarUsuariosActionPerformed
         // TODO add your handling code here:
         // TODO add your handling code here:
-
+        Util.habilitar(false, jTxtCodigo, jTxtApelido, jTxtNome, jFmtCpf, jFmtDataNascimentoUsuarios,
+                jPwdSenha, jCboAtivo, jBtnConfirmarUsuarios, jBtnCancelarUsuarios);
+        Util.habilitar(true, jBtnIncluirUsuarios, jBtnAlterarUsuarios, jBtnExcluirUsuarios, jBtnPesquisarUsuarios);
+        Util.Limpar(jTxtCodigo, jTxtApelido, jTxtNome, jFmtCpf, jFmtDataNascimentoUsuarios,
+                jPwdSenha, jCboAtivo);
+        
+        
 
     }//GEN-LAST:event_jBtnConfirmarUsuariosActionPerformed
 
     private void jBtnIncluirUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnIncluirUsuariosActionPerformed
-        // TODO add your handling code here:
-
+      Util.habilitar(true, jTxtCodigo, jTxtApelido, jTxtNome, jFmtCpf, jFmtDataNascimentoUsuarios,
+                jPwdSenha, jCboAtivo, jBtnConfirmarUsuarios, jBtnCancelarUsuarios);
+        Util.habilitar(false, jBtnIncluirUsuarios, jBtnAlterarUsuarios, jBtnExcluirUsuarios, jBtnPesquisarUsuarios);
+        Util.Limpar(jTxtCodigo, jTxtNome, jTxtApelido, jFmtCpf, jFmtDataNascimentoUsuarios,
+                jPwdSenha, jCboNivel, jCboAtivo);
     }//GEN-LAST:event_jBtnIncluirUsuariosActionPerformed
 
     private void jBtnAlterarUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnAlterarUsuariosActionPerformed
         // TODO add your handling code here:
+        Util.habilitar(true, jTxtCodigo, jTxtApelido, jTxtNome, jFmtCpf, jFmtDataNascimentoUsuarios,
+                jPwdSenha, jCboAtivo, jBtnConfirmarUsuarios, jBtnCancelarUsuarios);
+        Util.habilitar(false, jBtnIncluirUsuarios, jBtnAlterarUsuarios, jBtnExcluirUsuarios, jBtnPesquisarUsuarios);
 
     }//GEN-LAST:event_jBtnAlterarUsuariosActionPerformed
 
     private void jBtnExcluirUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnExcluirUsuariosActionPerformed
         // TODO add your handling code here:
+         Util.habilitar(true, jBtnConfirmarUsuarios, jBtnCancelarUsuarios);
+        Util.habilitar(false, jBtnIncluirUsuarios, jBtnAlterarUsuarios, jBtnExcluirUsuarios, jBtnPesquisarUsuarios);
+          
       
     }//GEN-LAST:event_jBtnExcluirUsuariosActionPerformed
 
@@ -261,16 +276,16 @@ public class JDlgUsuarios extends javax.swing.JDialog {
 
     private void jBtnCancelarUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnCancelarUsuariosActionPerformed
         // TODO add your handling code here:
-    Util.habilitar(false, jTxtIdProduto, jTxtNome, jFmtPreco, jTxtDescricao, jLblCategoria,
-                jTxtFornecedor, jCboAtivo,
-                jBtnConfirmarProdutos, jBtnancelarProdutos);
-        Util.habilitar(true, jBtnIncluirProdutos, jBtnAlterarProdutos, jBtnExcluirProdutos, jBtnPesquisarProdutos);
-        Util.Limpar(jTxtIdProduto, jTxtNome, jFmtPreco, jTxtDescricao, jLblCategoria,
-                jTxtFornecedor, jCboAtivo);
+    Util.habilitar(false, jTxtCodigo, jTxtNome, jTxtApelido, jFmtCpf, jFmtDataNascimentoUsuarios,
+                jPwdSenha, jCboNivel, jCboAtivo,
+                jBtnConfirmarUsuarios, jBtnCancelarUsuarios);
+        Util.habilitar(true, jBtnIncluirUsuarios, jBtnAlterarUsuarios, jBtnExcluirUsuarios, jBtnPesquisarUsuarios);
+        Util.Limpar(jTxtCodigo, jTxtNome, jTxtApelido, jFmtCpf, jFmtDataNascimentoUsuarios);
     }//GEN-LAST:event_jBtnCancelarUsuariosActionPerformed
 
     private void jBtnPesquisarUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnPesquisarUsuariosActionPerformed
         // TODO add your handling code here:
+         Util.mensagem("Não implementado");
 
     }//GEN-LAST:event_jBtnPesquisarUsuariosActionPerformed
 

@@ -253,38 +253,65 @@ public class JDlgVendedor extends javax.swing.JDialog {
 
     private void jBntIncluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBntIncluirActionPerformed
         // TODO add your handling code here:
+        Util.habilitar(true,jTxtNomeVendedor, jTxtApelidoVendedor, jTxtCidadeVendedor, jTxtCodigoVendedor, jTxtEmailVendedor,
+                jTxtEnderecoVendedor, jTxtEstadoVendedor,
+                jChbAtivoVendedor, jFmtCelularVendedor, jFmtCpfVendedor, jFmtDataNascimentoVendedor,
+                jFmtrgVendedor, jBtnConfirmar, jBntCancelar);
+        Util.habilitar(false, jTxtNomeVendedor, jTxtApelidoVendedor, jTxtCidadeVendedor, jTxtCodigoVendedor, jTxtEmailVendedor,
+                jTxtEnderecoVendedor, jTxtEstadoVendedor,
+              jChbAtivoVendedor, jFmtCelularVendedor, jFmtCpfVendedor, jFmtDataNascimentoVendedor);
 
     }//GEN-LAST:event_jBntIncluirActionPerformed
 
     private void jBntAlterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBntAlterarActionPerformed
         // TODO add your handling code here:
+         Util.habilitar(true,jTxtNomeVendedor, jTxtApelidoVendedor, jTxtCidadeVendedor, jTxtCodigoVendedor, jTxtEmailVendedor,
+                jTxtEnderecoVendedor, jTxtEstadoVendedor,
+                jChbAtivoVendedor, jFmtCelularVendedor, jFmtCpfVendedor, jFmtDataNascimentoVendedor,
+                jFmtrgVendedor, jBtnConfirmar, jBntCancelar);
+        Util.habilitar(false, jBntIncluir, jBntAlterar, jBtnExcluir, jBtnPesquisar);
 
 
     }//GEN-LAST:event_jBntAlterarActionPerformed
 
     private void jBntCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBntCancelarActionPerformed
-Util.habilitar(false, jTxtIdProduto, jTxtNome, jFmtPreco, jTxtDescricao, jLblCategoria,
-                jTxtFornecedor, jCboAtivo,
-                jBtnConfirmarProdutos, jBtnancelarProdutos);
-        Util.habilitar(true, jBtnIncluirProdutos, jBtnAlterarProdutos, jBtnExcluirProdutos, jBtnPesquisarProdutos);
-        Util.Limpar(jTxtIdProduto, jTxtNome, jFmtPreco, jTxtDescricao, jLblCategoria,
-                jTxtFornecedor, jCboAtivo);        // TODO add your handling code here:
+Util.habilitar(false, jTxtNomeVendedor, jTxtApelidoVendedor, jTxtCidadeVendedor, jTxtCodigoVendedor, jTxtEmailVendedor,
+                jTxtEnderecoVendedor, jTxtEstadoVendedor,
+                jChbAtivoVendedor, jFmtCelularVendedor, jFmtCpfVendedor, jFmtDataNascimentoVendedor,
+                jFmtrgVendedor);
+        Util.habilitar(true, jBntIncluir, jBtnConfirmar, jBtnExcluir, jBtnPesquisar);
+        Util.Limpar(jTxtNomeVendedor, jTxtApelidoVendedor, jTxtCidadeVendedor, jTxtCodigoVendedor, jTxtEmailVendedor,
+                jTxtEnderecoVendedor, jTxtEstadoVendedor,
+                jChbAtivoVendedor, jFmtCelularVendedor, jFmtCpfVendedor, jFmtDataNascimentoVendedor); 
         
     }//GEN-LAST:event_jBntCancelarActionPerformed
 
     private void jBtnConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnConfirmarActionPerformed
         // TODO add your handling code here:
+                                                    
+        Util.habilitar(false, jTxtNomeVendedor, jTxtApelidoVendedor, jTxtCidadeVendedor, jTxtCodigoVendedor, jTxtEmailVendedor,
+                jTxtEnderecoVendedor, jTxtEstadoVendedor,
+                jChbAtivoVendedor, jFmtCelularVendedor, jFmtCpfVendedor, jFmtDataNascimentoVendedor,
+                jFmtrgVendedor, jBtnConfirmar, jBntCancelar);
+        Util.habilitar(true, jBntIncluir, jBntAlterar, jBtnExcluir, jBtnPesquisar);
+        Util.Limpar( jTxtNomeVendedor, jTxtApelidoVendedor, jTxtCidadeVendedor, jTxtCodigoVendedor, jTxtEmailVendedor,
+                jTxtEnderecoVendedor, jTxtEstadoVendedor,
+                jChbAtivoVendedor, jFmtCelularVendedor, jFmtCpfVendedor, jFmtDataNascimentoVendedor,
+                jFmtrgVendedor);
      
     }//GEN-LAST:event_jBtnConfirmarActionPerformed
 
     private void jBtnExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnExcluirActionPerformed
         // TODO add your handling code here:
+        Util.habilitar(true, jBtnConfirmar, jBntCancelar);
+        Util.habilitar(false, jBntIncluir, jBntAlterar, jBtnExcluir, jBtnPesquisar);
+      
       
     }//GEN-LAST:event_jBtnExcluirActionPerformed
 
     private void jBtnPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnPesquisarActionPerformed
         // TODO add your handling code here:
-
+    Util.mensagem("Não implementado");
 
     }//GEN-LAST:event_jBtnPesquisarActionPerformed
 

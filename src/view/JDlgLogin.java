@@ -90,7 +90,15 @@ public class JDlgLogin extends javax.swing.JDialog{
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
- 
+String usuario = jTextFieldUsuario.getText();
+        String senha = new String(jPasswordFieldSenha.getPassword());
+
+        if (usuario.equals("julia") && senha.equals("1234")) {
+            dispose(); 
+            new JFrmPrincipal().setVisible(true); 
+        } else {
+            javax.swing.JOptionPane.showMessageDialog(this, "Usuário ou senha inválidos!");
+        } 
     }//GEN-LAST:event_jButton1ActionPerformed
  /**
      * @param args the command line arguments
