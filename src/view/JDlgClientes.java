@@ -412,16 +412,19 @@ public class JDlgClientes extends javax.swing.JDialog {
                 jFmtDataCadastro, jFmtDataUltimaCompra, jFmtLImitedeCredito, jCboAtivo,
                  jBtnConfirmar, jBtnCancelar);
         Util.habilitar(false, jBtnIncluir, jBtnAlterar, jBtnExcluir, jBtnPesquisar);
-        Util.Limpar(jTxtCodigo, jTxtNome, jFmtCpf, jFmtDatadeNascimento, jCboAtivo);
+        Util.Limpar(jTxtCodigo, jTxtNome, jFmtDatadeNascimento,jFmtRg,
+                jCboSexo, jTxtEmail, jTxtEndereco, jFmtTelefone, jFmtCelular, 
+                jFmtDataCadastro, jFmtDataUltimaCompra, jFmtLImitedeCredito, jCboAtivo);
 
        
     }//GEN-LAST:event_jBtnIncluirActionPerformed
 
     private void jBtnConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnConfirmarActionPerformed
-        Util.habilitar(false, jTxtCodigo, jTxtNome, jFmtCpf, jFmtDatadeNascimento,
-                jCboAtivo, jBtnConfirmar, jBtnCancelar);
+        Util.habilitar(false,jTxtCodigo, jTxtNome, jFmtDatadeNascimento,jFmtRg,
+                jCboSexo, jTxtEmail, jTxtEndereco, jFmtTelefone, jFmtCelular, 
+                jFmtDataCadastro, jFmtDataUltimaCompra, jFmtLImitedeCredito, jCboAtivo,
+                 jBtnConfirmar, jBtnCancelar);
         Util.habilitar(true, jBtnIncluir, jBtnAlterar, jBtnExcluir, jBtnPesquisar);
-        Util.Limpar(jTxtCodigo, jTxtNome, jFmtCpf, jFmtDatadeNascimento, jCboAtivo);
     }//GEN-LAST:event_jBtnConfirmarActionPerformed
 
     private void jFmtRgActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFmtRgActionPerformed
@@ -434,23 +437,26 @@ public class JDlgClientes extends javax.swing.JDialog {
 
     private void jBtnExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnExcluirActionPerformed
         // TODO add your handling code here:
-        Util.habilitar(true, jBtnConfirmar, jBtnCancelar);
-        Util.habilitar(false, jBtnIncluir, jBtnAlterar, jBtnExcluir, jBtnPesquisar);
-      
+        Util.perguntar("Deseja excluir o registro?");
+        Util.Limpar(jTxtCodigo, jTxtNome, jFmtDatadeNascimento,jFmtRg,
+                jCboSexo, jTxtEmail, jTxtEndereco, jFmtTelefone, jFmtCelular, 
+                jFmtDataCadastro, jFmtDataUltimaCompra, jFmtLImitedeCredito, jCboAtivo);
     }//GEN-LAST:event_jBtnExcluirActionPerformed
 
     private void jBtnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnCancelarActionPerformed
-      Util.habilitar(false, jTxtCodigo, jTxtNome, jFmtCpf, jFmtDatadeNascimento,
-                jCboAtivo, jBtnConfirmar, jBtnCancelar);
-        Util.habilitar(true, jBtnIncluir, jBtnAlterar, jBtnExcluir, jBtnPesquisar);
-        Util.Limpar(jTxtCodigo, jTxtNome, jFmtCpf, jFmtDatadeNascimento, jCboAtivo);
+     Util.habilitar(true, jTxtCodigo, jTxtNome, jFmtDatadeNascimento,jFmtRg,
+                jCboSexo, jTxtEmail, jTxtEndereco, jFmtTelefone, jFmtCelular, 
+                jFmtDataCadastro, jFmtDataUltimaCompra, jFmtLImitedeCredito, jCboAtivo,
+                 jBtnConfirmar, jBtnCancelar);
+        Util.habilitar(false, jBtnIncluir, jBtnAlterar, jBtnExcluir, jBtnPesquisar);
     }//GEN-LAST:event_jBtnCancelarActionPerformed
 
     private void jBtnAlterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnAlterarActionPerformed
-        Util.habilitar(true,jTxtCodigo, jTxtNome, jFmtDatadeNascimento,jFmtRg,
+        Util.habilitar(false,jTxtCodigo, jTxtNome, jFmtDatadeNascimento,jFmtRg,
                 jCboSexo, jTxtEmail, jTxtEndereco, jFmtTelefone, jFmtCelular, 
+                jFmtDataCadastro, jFmtDataUltimaCompra, jFmtLImitedeCredito, jCboAtivo,
                  jBtnConfirmar, jBtnCancelar);
-        Util.habilitar(false, jBtnIncluir, jBtnAlterar, jBtnExcluir, jBtnPesquisar);
+        Util.habilitar(true, jBtnIncluir, jBtnAlterar, jBtnExcluir, jBtnPesquisar);
     }//GEN-LAST:event_jBtnAlterarActionPerformed
  /**
      * @param args the command line arguments

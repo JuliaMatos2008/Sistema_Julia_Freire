@@ -236,10 +236,9 @@ public class JDlgProdutos extends javax.swing.JDialog {
     private void jBtnancelarProdutosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnancelarProdutosActionPerformed
 
         // TODO add your handling code here:
-        Util.habilitar(false, jTxtIdProduto, jTxtNome, jFmtPreco, jTxtDescricao, jLblCategoria,
-                jTxtFornecedor, jCboAtivo,
-                jBtnConfirmarProdutos, jBtnancelarProdutos);
-        Util.habilitar(true, jBtnIncluirProdutos, jBtnAlterarProdutos, jBtnExcluirProdutos, jBtnPesquisarProdutos);
+        Util.habilitar(true, jTxtIdProduto,jTxtNome, jTxtDescricao, jFmtPreco, jLblCategoria, 
+               jTxtFornecedor, jCboAtivo, jBtnConfirmarProdutos, jBtnancelarProdutos);
+       Util.habilitar(false, jBtnIncluirProdutos, jBtnAlterarProdutos, jBtnExcluirProdutos, jBtnPesquisarProdutos);
         Util.Limpar(jTxtIdProduto, jTxtNome, jFmtPreco, jTxtDescricao, jLblCategoria,
                 jTxtFornecedor, jCboAtivo);
     }//GEN-LAST:event_jBtnancelarProdutosActionPerformed
@@ -256,22 +255,24 @@ public class JDlgProdutos extends javax.swing.JDialog {
 
     private void jBtnAlterarProdutosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnAlterarProdutosActionPerformed
         // TODO add your handling code here:
-       Util.habilitar(true, jTxtIdProduto, jTxtNome, jTxtDescricao, jFmtPreco, jLblCategoria, jTxtFornecedor, jCboAtivo);
+      Util.habilitar(false, jTxtIdProduto,jTxtNome, jTxtDescricao, jFmtPreco, jLblCategoria, 
+               jTxtFornecedor, jCboAtivo, jBtnConfirmarProdutos, jBtnancelarProdutos);
+       Util.habilitar(true, jBtnIncluirProdutos, jBtnAlterarProdutos, jBtnExcluirProdutos, jBtnPesquisarProdutos);
     }//GEN-LAST:event_jBtnAlterarProdutosActionPerformed
 
     private void jBtnExcluirProdutosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnExcluirProdutosActionPerformed
         // TODO add your handling code here:
        Util.perguntar("DESEJA EXCLUIR?");
+       Util.Limpar(jTxtIdProduto, jTxtNome, jTxtDescricao, jFmtPreco, jLblCategoria, jTxtFornecedor, jCboAtivo);
     }//GEN-LAST:event_jBtnExcluirProdutosActionPerformed
 
     private void jBtnConfirmarProdutosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnConfirmarProdutosActionPerformed
         // TODO add your handling code here:
        Util.mensagem("REGISTRO CONFIRMADO");
-       Util.habilitar(false, jTxtNome, jTxtDescricao, jFmtPreco, jLblCategoria, 
+       Util.habilitar(false, jTxtIdProduto,jTxtNome, jTxtDescricao, jFmtPreco, jLblCategoria, 
                jTxtFornecedor, jCboAtivo, jBtnConfirmarProdutos, jBtnancelarProdutos);
        Util.habilitar(true, jBtnIncluirProdutos, jBtnAlterarProdutos, jBtnExcluirProdutos, jBtnPesquisarProdutos);
-       Util.Limpar( jTxtNome, jTxtDescricao, jFmtPreco, jLblCategoria, 
-               jTxtFornecedor, jCboAtivo, jBtnConfirmarProdutos, jBtnancelarProdutos);
+       
     }//GEN-LAST:event_jBtnConfirmarProdutosActionPerformed
 
     private void jBtnPesquisarProdutosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnPesquisarProdutosActionPerformed
